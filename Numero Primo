@@ -1,0 +1,20 @@
+'''Escribe un programa que se encargue de comprobar si un número es o no primo.
+ * Hecho esto, imprime los números primos entre 1 y 100.'''
+ 
+def numPrimo(n):
+    if n <= 1:
+        return False
+    elif n==2:
+        return True
+    else:
+        for i in range(2, n):
+            if n % i == 0:
+                return False
+        return True
+    
+for i in range(-10, 101):
+    print(i, "", numPrimo(i))
+ 
+ 
+#Funcion digitando el numero que queremos ver   
+#print(numPrimo(33333))
